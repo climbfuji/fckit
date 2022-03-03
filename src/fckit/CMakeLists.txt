@@ -59,6 +59,7 @@ if( CMAKE_Fortran_COMPILER_ID MATCHES "PGI|NVHPC" )
   set_source_files_properties( module/fckit_array.F90  PROPERTIES COMPILE_FLAGS "-w" )
 endif()
 
+message(FATAL_ERROR "DH DEBUG: CMAKE_Fortran_IMPLICIT_LINK_LIBRARIES = '${CMAKE_Fortran_IMPLICIT_LINK_LIBRARIES}'")
 
 ecbuild_add_library( 
     TARGET     fckit

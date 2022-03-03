@@ -8,6 +8,8 @@
 
 cmake_policy( SET CMP0064 NEW ) # Recognize ``TEST`` as operator for the ``if()`` command. (introduced in CMake version 3.4)
 
+message(FATAL_ERROR "DH DEBUG: CMAKE_CXX_IMPLICIT_LINK_LIBRARIES = '${CMAKE_CXX_IMPLICIT_LINK_LIBRARIES}'")
+
 add_fctest( TARGET  fckit_test_array
             LINKER_LANGUAGE Fortran
             SOURCES test_array.F90
